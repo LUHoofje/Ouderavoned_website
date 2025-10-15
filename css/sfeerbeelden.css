@@ -1,0 +1,119 @@
+:root{
+    --hbc-groen: #00a9a3;
+    --hbc-wit: #fff;
+    --hbc-gold: #f5ba36;
+    --bg: #f4f4f4;
+}
+
+body {
+    background-color : var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--hbc-groen);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    max-height: 125px;
+    max-width: 90%;
+    z-index: 1;
+    transform: rotate(7deg);
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.logo-card {
+    background: var(--bg);
+    border-radius: 8px;
+    margin-top: -5px;
+    margin-left: -50px;
+    width: 350px;
+    height: 150px;
+    transform: rotate(-7deg);
+}
+
+/* Container (sidebar + content) */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: var(--hbc-groen);
+    padding: 20px 10px;
+    min-height: calc(100vh - 100px);
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 10px 10px;
+}
+
+.sidebar nav a:focus, .sidebar nav a:hover, .sidebar nav a[aria-current="page"] {
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-widget{
+  margin-top: 24px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(255,255,255,0.04);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Content */
+#content {
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer {
+  background: var(--hbc-groen);
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main-content */
+#projects {
+    background: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: auto;
+    max-width: 1000px;
+    width: 80rem;
+}
+
+#projects img {
+    max-width: 31vw;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+}
